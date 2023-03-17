@@ -1,84 +1,131 @@
-h1{
-    color:aqua;
+h1 {
+    color: aqua;
     border: 0.2rem dashed red;
     border-radius: 1rem;
     text-align: center;
 }
 
-h1.ingla{
+h1.ingla {
     color: red;
     border: 0.5rem groove white;
     border-radius: 0.6rem;
 }
 
-h1#port{
+h1#port {
     color: green;
     border: 0.5rem groove red;
     border-radius: 0.6rem;
 }
 
-h1.espa{
+h1.espa {
     color: yellow;
     border: 0.5rem groove red;
     border-radius: 0.6rem;
 }
 
-h1.fran{
+h1.fran {
     color: blue;
     border: 0.5rem groove white;
     border-radius: 0.6rem;
 }
 
-h2, h3, h4, h5, h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
     display: none;
 }
 
-body{
+body {
     background-color: black;
+    color: white;
 }
 
-p{
-    color: white;
+p {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     line-height: 1.2rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
+    text-indent: 5rem;
     text-shadow: 0.2rem 0.2rem 0.3rem white, 0 0 1rem aqua, 0 0 2rem darkcyan;
 }
 
-p.intro{
+p.intro { 
     text-align: right;
 }
 
-body ul li{
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+body ul li {
     color: green;
 }
 
-body ol li{
+body ol li {
     color: red;
 }
 
-footer{
-    clear: both;
-    background: yellow url("../img/discord.png") no-repeat left bottom;
-}Revolução Gloriosa e Industrial
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: lightblue;
+}
 
-Revolução Gloriosa e Industrial
+a:hover {
+    color: blueviolet;
+}
 
-div{
+img {
+    width: 20rem;
+    display: block;
+}
+
+section img {
+    float: center;
+}
+
+main.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.5rem;
+}
+
+main.flexbox {
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main.flexbox article {
+    background-color: blue;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+div {
     position: fixed;
     right: 0;
     bottom: 0;
-    display: inline;
+    display: block;
     z-index: 2rem;
     background-color: gray;
-    color:white;
+    color: white;
     border: 0.2rem solid skyblue;
     padding: 0.2rem;
     font-size: 2rem;
 }
 
-img{
-    width: 20rem;
+footer {
+    background-image: url("../img/discord.png");
+    background-color: white;
+    height: 2rem;
 }
